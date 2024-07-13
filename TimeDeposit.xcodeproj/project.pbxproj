@@ -1,0 +1,790 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		145E44322C3C328B0004174B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145E44312C3C328B0004174B /* AppDelegate.swift */; };
+		145E44342C3C328B0004174B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145E44332C3C328B0004174B /* SceneDelegate.swift */; };
+		145E44392C3C328B0004174B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145E44372C3C328B0004174B /* Main.storyboard */; };
+		145E443B2C3C328C0004174B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 145E443A2C3C328C0004174B /* Assets.xcassets */; };
+		145E443E2C3C328C0004174B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145E443C2C3C328C0004174B /* LaunchScreen.storyboard */; };
+		145E44492C3C328C0004174B /* TimeDepositTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145E44482C3C328C0004174B /* TimeDepositTests.swift */; };
+		145E44532C3C328C0004174B /* TimeDepositUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145E44522C3C328C0004174B /* TimeDepositUITests.swift */; };
+		145E44552C3C328C0004174B /* TimeDepositUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145E44542C3C328C0004174B /* TimeDepositUITestsLaunchTests.swift */; };
+		145E44662C3C33680004174B /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145E44652C3C33680004174B /* LandingPageViewController.swift */; };
+		145E44682C3C33770004174B /* LandingPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145E44672C3C33770004174B /* LandingPageViewModel.swift */; };
+		145E446D2C3C342F0004174B /* LandingPageTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145E446C2C3C342F0004174B /* LandingPageTabbarView.swift */; };
+		145E446F2C3C359A0004174B /* LandingPageTabbarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145E446E2C3C359A0004174B /* LandingPageTabbarViewModel.swift */; };
+		145E44732C3C39050004174B /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145E44722C3C39050004174B /* View+Extension.swift */; };
+		145E44752C3C3B240004174B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145E44742C3C3B240004174B /* UIColor+Extension.swift */; };
+		145E44772C3C3BB30004174B /* CommonColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145E44762C3C3BB30004174B /* CommonColor.swift */; };
+		14C1E9DD2C420134003012B8 /* DepositoCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1E9DC2C420134003012B8 /* DepositoCardTableViewCell.swift */; };
+		14C1E9DF2C42040A003012B8 /* TimeDepositModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1E9DE2C42040A003012B8 /* TimeDepositModel.swift */; };
+		14C1E9E12C42077B003012B8 /* Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1E9E02C42077B003012B8 /* Fetcher.swift */; };
+		14C1E9E52C420869003012B8 /* URLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1E9E42C420869003012B8 /* URLConstants.swift */; };
+		14C1E9E72C42158D003012B8 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1E9E62C42158D003012B8 /* UIView+Extension.swift */; };
+		14C1E9ED2C4229AC003012B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1E9EC2C4229AC003012B8 /* ViewController.swift */; };
+		14C1E9F02C424A43003012B8 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1E9EF2C424A43003012B8 /* Int+Extension.swift */; };
+		14C1E9F22C425993003012B8 /* TimeDepositTableCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1E9F12C425993003012B8 /* TimeDepositTableCellModel.swift */; };
+		14C1E9F42C425CEC003012B8 /* DetailPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1E9F32C425CEC003012B8 /* DetailPageViewController.swift */; };
+		14C1E9F62C425CF4003012B8 /* DetailPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1E9F52C425CF4003012B8 /* DetailPageViewModel.swift */; };
+		14C1E9F82C425D73003012B8 /* DetailPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1E9F72C425D73003012B8 /* DetailPageView.swift */; };
+		14C1E9FC2C42683F003012B8 /* AmountPillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1E9FB2C42683F003012B8 /* AmountPillView.swift */; };
+		14C1E9FE2C426CC6003012B8 /* HorizontalDashedDividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1E9FD2C426CC6003012B8 /* HorizontalDashedDividerView.swift */; };
+		14C1EA022C427155003012B8 /* TimeDepositCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1EA012C427155003012B8 /* TimeDepositCoordinator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		145E44452C3C328C0004174B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 145E44262C3C328B0004174B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 145E442D2C3C328B0004174B;
+			remoteInfo = TimeDeposit;
+		};
+		145E444F2C3C328C0004174B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 145E44262C3C328B0004174B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 145E442D2C3C328B0004174B;
+			remoteInfo = TimeDeposit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		145E442E2C3C328B0004174B /* TimeDeposit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeDeposit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		145E44312C3C328B0004174B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		145E44332C3C328B0004174B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		145E44382C3C328B0004174B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		145E443A2C3C328C0004174B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		145E443D2C3C328C0004174B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		145E443F2C3C328C0004174B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		145E44442C3C328C0004174B /* TimeDepositTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeDepositTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		145E44482C3C328C0004174B /* TimeDepositTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDepositTests.swift; sourceTree = "<group>"; };
+		145E444E2C3C328C0004174B /* TimeDepositUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeDepositUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		145E44522C3C328C0004174B /* TimeDepositUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDepositUITests.swift; sourceTree = "<group>"; };
+		145E44542C3C328C0004174B /* TimeDepositUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDepositUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		145E44652C3C33680004174B /* LandingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
+		145E44672C3C33770004174B /* LandingPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewModel.swift; sourceTree = "<group>"; };
+		145E446C2C3C342F0004174B /* LandingPageTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageTabbarView.swift; sourceTree = "<group>"; };
+		145E446E2C3C359A0004174B /* LandingPageTabbarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageTabbarViewModel.swift; sourceTree = "<group>"; };
+		145E44722C3C39050004174B /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		145E44742C3C3B240004174B /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		145E44762C3C3BB30004174B /* CommonColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonColor.swift; sourceTree = "<group>"; };
+		14C1E9DC2C420134003012B8 /* DepositoCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositoCardTableViewCell.swift; sourceTree = "<group>"; };
+		14C1E9DE2C42040A003012B8 /* TimeDepositModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDepositModel.swift; sourceTree = "<group>"; };
+		14C1E9E02C42077B003012B8 /* Fetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetcher.swift; sourceTree = "<group>"; };
+		14C1E9E42C420869003012B8 /* URLConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstants.swift; sourceTree = "<group>"; };
+		14C1E9E62C42158D003012B8 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		14C1E9EC2C4229AC003012B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		14C1E9EF2C424A43003012B8 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		14C1E9F12C425993003012B8 /* TimeDepositTableCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDepositTableCellModel.swift; sourceTree = "<group>"; };
+		14C1E9F32C425CEC003012B8 /* DetailPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageViewController.swift; sourceTree = "<group>"; };
+		14C1E9F52C425CF4003012B8 /* DetailPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageViewModel.swift; sourceTree = "<group>"; };
+		14C1E9F72C425D73003012B8 /* DetailPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageView.swift; sourceTree = "<group>"; };
+		14C1E9FB2C42683F003012B8 /* AmountPillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountPillView.swift; sourceTree = "<group>"; };
+		14C1E9FD2C426CC6003012B8 /* HorizontalDashedDividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalDashedDividerView.swift; sourceTree = "<group>"; };
+		14C1EA012C427155003012B8 /* TimeDepositCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDepositCoordinator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		145E442B2C3C328B0004174B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		145E44412C3C328C0004174B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		145E444B2C3C328C0004174B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		145E44252C3C328B0004174B = {
+			isa = PBXGroup;
+			children = (
+				145E44302C3C328B0004174B /* TimeDeposit */,
+				145E44472C3C328C0004174B /* TimeDepositTests */,
+				145E44512C3C328C0004174B /* TimeDepositUITests */,
+				145E442F2C3C328B0004174B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		145E442F2C3C328B0004174B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				145E442E2C3C328B0004174B /* TimeDeposit.app */,
+				145E44442C3C328C0004174B /* TimeDepositTests.xctest */,
+				145E444E2C3C328C0004174B /* TimeDepositUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		145E44302C3C328B0004174B /* TimeDeposit */ = {
+			isa = PBXGroup;
+			children = (
+				145E44782C3C3BB80004174B /* Extension */,
+				145E44712C3C38F50004174B /* Common */,
+				145E44702C3C38F10004174B /* Model */,
+				145E44642C3C33400004174B /* PaymentPage */,
+				145E44632C3C33390004174B /* DetailPage */,
+				145E44612C3C33270004174B /* LandingPage */,
+				145E44312C3C328B0004174B /* AppDelegate.swift */,
+				145E44332C3C328B0004174B /* SceneDelegate.swift */,
+				14C1E9EC2C4229AC003012B8 /* ViewController.swift */,
+				145E44372C3C328B0004174B /* Main.storyboard */,
+				145E443A2C3C328C0004174B /* Assets.xcassets */,
+				145E443C2C3C328C0004174B /* LaunchScreen.storyboard */,
+				145E443F2C3C328C0004174B /* Info.plist */,
+			);
+			path = TimeDeposit;
+			sourceTree = "<group>";
+		};
+		145E44472C3C328C0004174B /* TimeDepositTests */ = {
+			isa = PBXGroup;
+			children = (
+				145E44482C3C328C0004174B /* TimeDepositTests.swift */,
+			);
+			path = TimeDepositTests;
+			sourceTree = "<group>";
+		};
+		145E44512C3C328C0004174B /* TimeDepositUITests */ = {
+			isa = PBXGroup;
+			children = (
+				145E44522C3C328C0004174B /* TimeDepositUITests.swift */,
+				145E44542C3C328C0004174B /* TimeDepositUITestsLaunchTests.swift */,
+			);
+			path = TimeDepositUITests;
+			sourceTree = "<group>";
+		};
+		145E44612C3C33270004174B /* LandingPage */ = {
+			isa = PBXGroup;
+			children = (
+				145E446B2C3C33F00004174B /* Components */,
+				145E44652C3C33680004174B /* LandingPageViewController.swift */,
+				145E44672C3C33770004174B /* LandingPageViewModel.swift */,
+			);
+			path = LandingPage;
+			sourceTree = "<group>";
+		};
+		145E44632C3C33390004174B /* DetailPage */ = {
+			isa = PBXGroup;
+			children = (
+				14C1E9F92C426820003012B8 /* Components */,
+				14C1E9F32C425CEC003012B8 /* DetailPageViewController.swift */,
+				14C1E9F52C425CF4003012B8 /* DetailPageViewModel.swift */,
+				14C1E9F72C425D73003012B8 /* DetailPageView.swift */,
+			);
+			path = DetailPage;
+			sourceTree = "<group>";
+		};
+		145E44642C3C33400004174B /* PaymentPage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PaymentPage;
+			sourceTree = "<group>";
+		};
+		145E446B2C3C33F00004174B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				14C1E9DB2C4200F9003012B8 /* Cell */,
+				14C1E9DA2C4200F1003012B8 /* Tabbar */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		145E44702C3C38F10004174B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				14C1E9DE2C42040A003012B8 /* TimeDepositModel.swift */,
+				14C1E9F12C425993003012B8 /* TimeDepositTableCellModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		145E44712C3C38F50004174B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				14C1E9E92C4215A9003012B8 /* Constants */,
+				14C1E9E82C4215A3003012B8 /* Extension */,
+				14C1E9E02C42077B003012B8 /* Fetcher.swift */,
+				14C1E9FD2C426CC6003012B8 /* HorizontalDashedDividerView.swift */,
+				14C1EA012C427155003012B8 /* TimeDepositCoordinator.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		145E44782C3C3BB80004174B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				145E44722C3C39050004174B /* View+Extension.swift */,
+				145E44742C3C3B240004174B /* UIColor+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		14C1E9DA2C4200F1003012B8 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				145E446C2C3C342F0004174B /* LandingPageTabbarView.swift */,
+				145E446E2C3C359A0004174B /* LandingPageTabbarViewModel.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		14C1E9DB2C4200F9003012B8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				14C1E9DC2C420134003012B8 /* DepositoCardTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		14C1E9E82C4215A3003012B8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				14C1E9E62C42158D003012B8 /* UIView+Extension.swift */,
+				14C1E9EF2C424A43003012B8 /* Int+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		14C1E9E92C4215A9003012B8 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				145E44762C3C3BB30004174B /* CommonColor.swift */,
+				14C1E9E42C420869003012B8 /* URLConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		14C1E9F92C426820003012B8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				14C1E9FA2C426829003012B8 /* AmountPillView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		14C1E9FA2C426829003012B8 /* AmountPillView */ = {
+			isa = PBXGroup;
+			children = (
+				14C1E9FB2C42683F003012B8 /* AmountPillView.swift */,
+			);
+			path = AmountPillView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		145E442D2C3C328B0004174B /* TimeDeposit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 145E44582C3C328C0004174B /* Build configuration list for PBXNativeTarget "TimeDeposit" */;
+			buildPhases = (
+				145E442A2C3C328B0004174B /* Sources */,
+				145E442B2C3C328B0004174B /* Frameworks */,
+				145E442C2C3C328B0004174B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeDeposit;
+			productName = TimeDeposit;
+			productReference = 145E442E2C3C328B0004174B /* TimeDeposit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		145E44432C3C328C0004174B /* TimeDepositTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 145E445B2C3C328C0004174B /* Build configuration list for PBXNativeTarget "TimeDepositTests" */;
+			buildPhases = (
+				145E44402C3C328C0004174B /* Sources */,
+				145E44412C3C328C0004174B /* Frameworks */,
+				145E44422C3C328C0004174B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				145E44462C3C328C0004174B /* PBXTargetDependency */,
+			);
+			name = TimeDepositTests;
+			productName = TimeDepositTests;
+			productReference = 145E44442C3C328C0004174B /* TimeDepositTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		145E444D2C3C328C0004174B /* TimeDepositUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 145E445E2C3C328C0004174B /* Build configuration list for PBXNativeTarget "TimeDepositUITests" */;
+			buildPhases = (
+				145E444A2C3C328C0004174B /* Sources */,
+				145E444B2C3C328C0004174B /* Frameworks */,
+				145E444C2C3C328C0004174B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				145E44502C3C328C0004174B /* PBXTargetDependency */,
+			);
+			name = TimeDepositUITests;
+			productName = TimeDepositUITests;
+			productReference = 145E444E2C3C328C0004174B /* TimeDepositUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		145E44262C3C328B0004174B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					145E442D2C3C328B0004174B = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					145E44432C3C328C0004174B = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 145E442D2C3C328B0004174B;
+					};
+					145E444D2C3C328C0004174B = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 145E442D2C3C328B0004174B;
+					};
+				};
+			};
+			buildConfigurationList = 145E44292C3C328B0004174B /* Build configuration list for PBXProject "TimeDeposit" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 145E44252C3C328B0004174B;
+			productRefGroup = 145E442F2C3C328B0004174B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				145E442D2C3C328B0004174B /* TimeDeposit */,
+				145E44432C3C328C0004174B /* TimeDepositTests */,
+				145E444D2C3C328C0004174B /* TimeDepositUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		145E442C2C3C328B0004174B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				145E443E2C3C328C0004174B /* LaunchScreen.storyboard in Resources */,
+				145E443B2C3C328C0004174B /* Assets.xcassets in Resources */,
+				145E44392C3C328B0004174B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		145E44422C3C328C0004174B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		145E444C2C3C328C0004174B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		145E442A2C3C328B0004174B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14C1E9ED2C4229AC003012B8 /* ViewController.swift in Sources */,
+				14C1E9F02C424A43003012B8 /* Int+Extension.swift in Sources */,
+				145E44322C3C328B0004174B /* AppDelegate.swift in Sources */,
+				145E446D2C3C342F0004174B /* LandingPageTabbarView.swift in Sources */,
+				14C1E9F62C425CF4003012B8 /* DetailPageViewModel.swift in Sources */,
+				145E44662C3C33680004174B /* LandingPageViewController.swift in Sources */,
+				145E44342C3C328B0004174B /* SceneDelegate.swift in Sources */,
+				14C1E9F42C425CEC003012B8 /* DetailPageViewController.swift in Sources */,
+				14C1E9FC2C42683F003012B8 /* AmountPillView.swift in Sources */,
+				14C1E9DD2C420134003012B8 /* DepositoCardTableViewCell.swift in Sources */,
+				14C1E9F22C425993003012B8 /* TimeDepositTableCellModel.swift in Sources */,
+				14C1E9F82C425D73003012B8 /* DetailPageView.swift in Sources */,
+				14C1EA022C427155003012B8 /* TimeDepositCoordinator.swift in Sources */,
+				14C1E9E12C42077B003012B8 /* Fetcher.swift in Sources */,
+				14C1E9FE2C426CC6003012B8 /* HorizontalDashedDividerView.swift in Sources */,
+				14C1E9E52C420869003012B8 /* URLConstants.swift in Sources */,
+				145E446F2C3C359A0004174B /* LandingPageTabbarViewModel.swift in Sources */,
+				14C1E9E72C42158D003012B8 /* UIView+Extension.swift in Sources */,
+				145E44732C3C39050004174B /* View+Extension.swift in Sources */,
+				145E44682C3C33770004174B /* LandingPageViewModel.swift in Sources */,
+				14C1E9DF2C42040A003012B8 /* TimeDepositModel.swift in Sources */,
+				145E44772C3C3BB30004174B /* CommonColor.swift in Sources */,
+				145E44752C3C3B240004174B /* UIColor+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		145E44402C3C328C0004174B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				145E44492C3C328C0004174B /* TimeDepositTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		145E444A2C3C328C0004174B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				145E44552C3C328C0004174B /* TimeDepositUITestsLaunchTests.swift in Sources */,
+				145E44532C3C328C0004174B /* TimeDepositUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		145E44462C3C328C0004174B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 145E442D2C3C328B0004174B /* TimeDeposit */;
+			targetProxy = 145E44452C3C328C0004174B /* PBXContainerItemProxy */;
+		};
+		145E44502C3C328C0004174B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 145E442D2C3C328B0004174B /* TimeDeposit */;
+			targetProxy = 145E444F2C3C328C0004174B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		145E44372C3C328B0004174B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				145E44382C3C328B0004174B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		145E443C2C3C328C0004174B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				145E443D2C3C328C0004174B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		145E44562C3C328C0004174B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		145E44572C3C328C0004174B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		145E44592C3C328C0004174B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimeDeposit/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = martinnugraha.TimeDeposit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		145E445A2C3C328C0004174B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimeDeposit/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = martinnugraha.TimeDeposit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		145E445C2C3C328C0004174B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = martinnugraha.TimeDepositTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeDeposit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TimeDeposit";
+			};
+			name = Debug;
+		};
+		145E445D2C3C328C0004174B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = martinnugraha.TimeDepositTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeDeposit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TimeDeposit";
+			};
+			name = Release;
+		};
+		145E445F2C3C328C0004174B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = martinnugraha.TimeDepositUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TimeDeposit;
+			};
+			name = Debug;
+		};
+		145E44602C3C328C0004174B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = martinnugraha.TimeDepositUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TimeDeposit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		145E44292C3C328B0004174B /* Build configuration list for PBXProject "TimeDeposit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				145E44562C3C328C0004174B /* Debug */,
+				145E44572C3C328C0004174B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		145E44582C3C328C0004174B /* Build configuration list for PBXNativeTarget "TimeDeposit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				145E44592C3C328C0004174B /* Debug */,
+				145E445A2C3C328C0004174B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		145E445B2C3C328C0004174B /* Build configuration list for PBXNativeTarget "TimeDepositTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				145E445C2C3C328C0004174B /* Debug */,
+				145E445D2C3C328C0004174B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		145E445E2C3C328C0004174B /* Build configuration list for PBXNativeTarget "TimeDepositUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				145E445F2C3C328C0004174B /* Debug */,
+				145E44602C3C328C0004174B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 145E44262C3C328B0004174B /* Project object */;
+}

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "BADA7DB2-30D2-4633-B7CC-40AA52482223"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "61F5B692-29E2-4E76-B236-6278C785A1E5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TimeDeposit/DetailPage/Components/AmountPillView/AmountPillView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "createAmountPillView(amountString:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BD8218C5-68CD-4E96-8428-A612BD1B7A1A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TimeDeposit/DetailPage/DetailPageView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
+            landmarkName = "createAmountTextField()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BD8218C5-68CD-4E96-8428-A612BD1B7A1A - 8fbe83152a326413"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in TimeDeposit.DetailPageView.createAmountTextField() -&gt; some"
+                  moduleName = "TimeDeposit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/martin.nugraha/Documents/Projects/TimeDeposit/TimeDeposit/DetailPage/DetailPageView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "144"
+                  endingLineNumber = "144"
+                  offsetFromSymbolStart = "1676">
+               </Location>
+               <Location
+                  uuid = "BD8218C5-68CD-4E96-8428-A612BD1B7A1A - 8fbe83152a326413"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in TimeDeposit.DetailPageView.createAmountTextField() -&gt; some"
+                  moduleName = "TimeDeposit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/martin.nugraha/Documents/Projects/TimeDeposit/TimeDeposit/DetailPage/DetailPageView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "144"
+                  endingLineNumber = "144"
+                  offsetFromSymbolStart = "1768">
+               </Location>
+               <Location
+                  uuid = "BD8218C5-68CD-4E96-8428-A612BD1B7A1A - 8fbe83152a326430"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in TimeDeposit.DetailPageView.createAmountTextField() -&gt; some"
+                  moduleName = "TimeDeposit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/martin.nugraha/Documents/Projects/TimeDeposit/TimeDeposit/DetailPage/DetailPageView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "143"
+                  endingLineNumber = "143"
+                  offsetFromSymbolStart = "1656">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
